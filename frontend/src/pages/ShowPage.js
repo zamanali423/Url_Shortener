@@ -6,7 +6,7 @@ const ShowPage = () => {
 
   const increaseClickCount = async () => {
     try {
-      await fetch(`http://localhost:9000/short_url/count-clicks/${shortId}`, {
+      await fetch(`https://short-url-backend/short_url/count-clicks/${shortId}`, {
         method: "PUT",
       });
     } catch (error) {
@@ -18,7 +18,7 @@ const ShowPage = () => {
     const fetchOriginalUrl = async () => {
       try {
         const response = await fetch(
-          `http://localhost:9000/short_url/show_url_page/${shortId}`
+          `https://short-url-backend/short_url/show_url_page/${shortId}`
         );
 
         if (!response.ok) {
