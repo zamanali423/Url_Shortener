@@ -1,0 +1,29 @@
+
+  .table-container {
+    padding: 2rem;
+  }
+  .table-dark th,
+  .table-dark td {
+    vertical-align: middle;
+  }
+  .table-dark th {
+    background-color: #212529;
+  }
+  .table-hover tbody tr:hover {
+    background-color: #343a40;
+    transition: background-color 0.3s;
+  }
+  .table-dark tbody tr td {
+    border-color: #444;
+  }
+  .header-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  @media (max-width: 576px) {
+    .table {
+      font-size: 0.85rem;
+    }
+  }
