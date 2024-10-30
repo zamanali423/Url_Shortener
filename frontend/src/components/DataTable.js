@@ -8,7 +8,7 @@ const DataTable = () => {
   useEffect(() => {
     const fetchAllUrls = async () => {
       try {
-        const url_response = await fetch("http://localhost:9000/short_url");
+        const url_response = await fetch("https://short-url-backend/short_url");
 
         if (!url_response.ok) {
           alert("Urls not found");
