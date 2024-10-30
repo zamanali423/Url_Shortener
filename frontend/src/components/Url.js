@@ -41,7 +41,7 @@ const Url = () => {
         clicks: 0,
       };
       const url_response = await fetch(
-        "https://short-url-backend/short_url/newUrl",
+        "https://short-url-backend-alpha.vercel.app/short_url/newUrl",
         {
           method: "POST",
           headers: {
