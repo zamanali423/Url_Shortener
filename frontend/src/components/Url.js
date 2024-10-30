@@ -41,7 +41,7 @@ const Url = () => {
         clicks: 0,
       };
       const url_response = await fetch(
-        "http://localhost:9000/short_url/newUrl",
+        "https://short-url-backend/short_url/newUrl",
         {
           method: "POST",
           headers: {
